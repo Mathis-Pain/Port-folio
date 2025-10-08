@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mon Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <img src="static/photoProfil.jpeg" alt="Photo de profil" />
+        <h1>Pain Mathis</h1>
+        <p>Développeur Web Full Stack</p>
+        <div>
+          <a href="#projets" class="btn">Voir mes projets</a>
+          <a href="static/cv.pdf" class="btn btn-secondary" download
+            >📥 Télécharger CV</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos">
+      <h2>À propos de moi</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            À 35 ans, j’ai choisi de donner un nouvel élan à ma carrière après
+            plusieurs années comme technicien de maintenance. Habitué à
+            analyser, diagnostiquer et résoudre des problèmes complexes avec
+            méthode, je mets aujourd’hui cette rigueur et cette logique au
+            service du développement informatique. Actuellement en formation de
+            développeur full stack, j’apprends à maîtriser les langages de
+            programmation et les technologies web modernes. Curieux, persévérant
+            et passionné par la création de solutions innovantes, je recherche
+            une alternance qui me permettra de consolider mes compétences et de
+            contribuer activement à des projets concrets.
+          </p>
+          <p style="margin-top: 1rem">
+            Mon parcours m'a permis de maîtriser diverses technologies et de
+            développer une approche centrée sur l'utilisateur et les bonnes
+            pratiques de développement.
+          </p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 1rem">Compétences</h3>
+          <div class="skills">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets">
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <!-- Projet 1 -->
+        <div class="project-card">
+          <div class="project-img">🚀</div>
+          <div class="project-content">
+            <h3>Lem-in Visualizer</h3>
+            <p>
+              Visualisation interactive des algorithmes de pathfinding avec
+              animation en temps réel.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Go</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">SVG</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              style="font-size: 0.9rem; padding: 0.7rem 1.5rem"
+              >Voir le projet</a
+            >
+          </div>
+        </div>
+
+        <!-- Projet 2 (placeholder) -->
+        <div class="project-card">
+          <div class="project-img">💼</div>
+          <div class="project-content">
+            <h3>Projet à venir</h3>
+            <p>Description de votre prochain projet incroyable ici.</p>
+            <div class="project-tags">
+              <span class="tag">Tag 1</span>
+              <span class="tag">Tag 2</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              style="font-size: 0.9rem; padding: 0.7rem 1.5rem"
+              >Voir le projet</a
+            >
+          </div>
+        </div>
+
+        <!-- Projet 3 (placeholder) -->
+        <div class="project-card">
+          <div class="project-img">🎨</div>
+          <div class="project-content">
+            <h3>Projet à venir</h3>
+            <p>Description de votre prochain projet incroyable ici.</p>
+            <div class="project-tags">
+              <span class="tag">Tag 1</span>
+              <span class="tag">Tag 2</span>
+            </div>
+            <a
+              href="#"
+              class="btn"
+              style="font-size: 0.9rem; padding: 0.7rem 1.5rem"
+              >Voir le projet</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Me Contacter</h2>
+      <div class="contact-content">
+        <p style="font-size: 1.2rem; margin-bottom: 2rem">
+          N'hésitez pas à me contacter pour discuter de vos projets ou
+          opportunités !
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:mathis.pain76@gmail.com" class="contact-link">
+            <div class="contact-icon">📧</div>
+            <span>Email</span>
+          </a>
+          <a
+            href="https://github.com/Mathis-Pain"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="contact-icon">💻</div>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mathis-pain-530aa0327/"
+            target="_blank"
+            class="contact-link"
+          >
+            <div class="contact-icon">💼</div>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+      // Animation au scroll (optionnel)
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animation = "fadeInUp 1s";
+          }
+        });
+      });
+
+      document.querySelectorAll(".project-card").forEach((card) => {
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>
