@@ -20,9 +20,13 @@
     <!-- Hero Section -->
     <section id="accueil" class="hero">
       <div class="hero-content">
-        <img src="static/photoProfil.jpeg" alt="Photo de profil" />
+        <img
+          src="static/photoProfil.png"
+          alt="Photo de profil"
+          class="profile-img"
+        />
         <h1>Pain Mathis</h1>
-        <p>Développeur Web Full Stack</p>
+        <p>Développeur Web Full Stack<br />En formation</p>
         <div>
           <a href="#projets" class="btn">Voir mes projets</a>
           <a href="static/cv.pdf" class="btn btn-secondary" download
@@ -173,20 +177,5 @@
     <footer>
       <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
     </footer>
-
-    <script>
-      // Animation au scroll (optionnel)
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.animation = "fadeInUp 1s";
-          }
-        });
-      });
-
-      document.querySelectorAll(".project-card").forEach((card) => {
-        observer.observe(card);
-      });
-    </script>
   </body>
 </html>
