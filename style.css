@@ -213,6 +213,9 @@ section h2::after {
   font-size: 3rem;
   color: white;
 }
+.project-img img {
+  width: 30%;
+}
 
 .project-content {
   padding: 1.5rem;
