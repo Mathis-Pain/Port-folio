@@ -224,6 +224,7 @@ section h2::after {
 .project-content h3 {
   color: var(--dark);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .project-content p {
@@ -244,6 +245,17 @@ section h2::after {
   border-radius: 15px;
   font-size: 0.85rem;
   color: var(--dark);
+}
+.no-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-project img {
+  max-width: 40%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 /* Contact Section */
