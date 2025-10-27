@@ -154,41 +154,61 @@ section h2::after {
   border-radius: 2px;
 }
 
-/* About Section */
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
 .about-text {
   font-size: 1.1rem;
   line-height: 1.8;
+  height: 100%;
 }
 
 .about-text p {
   text-align: justify;
+  width: 100%;
 }
-
-.skills {
+#apropos {
+  display: flex;
+}
+.apropos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  width: 50%;
+}
+.competences {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin-top: 1rem;
+}
+.hard-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.soft-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skill-tag {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  width: 60%;
+  width: 100%;
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.4rem;
   border-radius: 25px;
   font-weight: 500;
-
   text-align: center;
+  margin-bottom: 0.3rem;
 }
 
 /* Projects Section */
@@ -345,6 +365,9 @@ footer {
 }
 /* Responsive */
 @media (max-width: 768px) {
+  nav a {
+    padding: 0.5rem 0rem;
+  }
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -356,6 +379,20 @@ footer {
   .about-content {
     grid-template-columns: 1fr;
   }
+  #apropos {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #apropos > * {
+    width: 100%;
+  }
+  .skills {
+    margin-top: 0;
+  }
+  section h2 {
+    margin-bottom: 1rem;
+  }
 
   nav ul {
     gap: 1rem;
@@ -363,5 +400,9 @@ footer {
 
   section {
     padding: 3rem 1rem;
+  }
+  #apropos {
+    display: flex;
+    flex-direction: column;
   }
 }
