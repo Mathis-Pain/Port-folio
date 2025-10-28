@@ -251,7 +251,8 @@ section h2::after {
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  text-align: justify;
+
+  text-align: center;
 }
 
 .project-content h3 {
