@@ -88,7 +88,8 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       circle at 20% 50%,
       rgba(0, 255, 65, 0.1) 0%,
       transparent 50%
@@ -157,7 +158,9 @@ nav a:hover {
   border-radius: 50%;
   margin: 2rem auto;
   border: 3px solid var(--primary);
-  box-shadow: 0 0 30px var(--glow), inset 0 0 30px rgba(0, 255, 65, 0.2);
+  box-shadow:
+    0 0 30px var(--glow),
+    inset 0 0 30px rgba(0, 255, 65, 0.2);
   animation: fadeInUp 1s 0.4s backwards;
   background: linear-gradient(
     135deg,
@@ -358,6 +361,9 @@ section h2::after {
   border: 1px solid rgba(0, 255, 65, 0.2);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -393,6 +399,7 @@ section h2::after {
   align-items: center;
   padding: 1.5rem;
   text-align: center;
+  flex-grow: 1;
 }
 
 .project-content h3 {
@@ -408,6 +415,10 @@ section h2::after {
   margin-bottom: 1rem;
 }
 
+.project-content .btn {
+  margin-top: auto;
+  width: fit-content;
+}
 .project-tags {
   display: flex;
   gap: 0.5rem;

@@ -1,199 +1,211 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
-    <title>Mathis Pain</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="accueil" class="hero">
-      <div class="hero-content">
-        <img
-          src="static/photoProfil.png"
-          alt="Photo de profil"
-          class="profile-img"
-        />
-        <h1>Pain Mathis</h1>
-        <p>Développeur Web Full Stack<br />En formation</p>
-        <div>
-          <a href="#projets" class="btn">Voir mes projets</a>
-          <a href="static/cv.pdf" class="btn btn-secondary" download
-            >📥 Télécharger CV</a
-          >
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+  <title>Mathis Pain – Développeur Full Stack</title>
+  <meta name="google-site-verification" content="jWTx4BmTi5lm_9D7NGztFuX0eaTSJyEAdSb9vgctyD0" />
+  <meta name="description"
+    content="Portfolio de Mathis Pain, développeur full stack  (HTML, CSS, JavaScript, go, sql, git).">
+  <link rel="canonical" href="https://www.mathispain.fr/" />
+  <!-- 📣 Open Graph (aperçu Google / réseaux) -->
+  <meta property="og:title" content="Portfolio – Mathis Pain" />
+  <meta property="og:description"
+    content="Découvrez mes projets, mes compétences et mon univers en tant que développeur." />
+  <meta property="og:image" content="https://mathispain.fr/static/preview.jpg" />
+  <meta property="og:url" content="https://www.mathispain.fr/" />
+  <meta property="og:type" content="website" />
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <img src="static/photoProfil.png" alt="Photo de profil" class="profile-img" />
+      <h1>Pain Mathis</h1>
+      <p>Développeur Web Full Stack<br />En formation</p>
+      <div>
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="static/cv.pdf" class="btn btn-secondary" download>📥 Télécharger CV</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="apropos">
-      <div class="apropos">
+  <!-- About Section -->
+  <section id="apropos">
+    <div class="apropos">
       <h2>À propos de moi</h2>
-        <div class="about-text">
-          <p style="margin-top: 1rem">
-            À 35 ans, j’ai choisi de donner un nouvel élan à ma carrière après
-            plusieurs années comme technicien de maintenance. Habitué à
-            analyser, diagnostiquer et résoudre des problèmes complexes avec
-            méthode, je mets aujourd’hui cette rigueur et cette logique au
-            service du développement informatique.
-          </p>
-          <p style="margin-top: 1rem">
-            Actuellement en formation de développeur full stack, j’apprends à
-            maîtriser les langages de programmation et les technologies web
-            modernes.
-          </p>
-          <p style="margin-top: 1rem">
-            Mon parcours m'a permis de maîtriser diverses technologies et de
-            développer une approche centrée sur l'utilisateur et les bonnes
-            pratiques de développement.
-          </p>
-          <p style="margin-top: 1rem">
-            Curieux, persévérant et passionné par la création de solutions
-            innovantes, je recherche une alternance qui me permettra de
-            consolider mes compétences et de contribuer activement à des projets
-            concrets.
-          </p>
-        </div>
-        </div>
-        <div class="competences">
-          <h2>Compétences</h2>
-          <div class="skills">
-            <div class="hard-skills">
-              <h4>Hard skills :</h4>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Go</span>
-              <span class="skill-tag">HTML/CSS</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-            <div class="soft-skills">
-              <h4>Soft skills :</h4>
-              <span class="skill-tag">Curieux</span>
-              <span class="skill-tag">Disponible</span>
-              <span class="skill-tag">Persévèrent</span>
-              <span class="skill-tag">Adaptabilité</span>
-              <span class="skill-tag">Esprit d'équipe</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projets">
-      <h2>Mes Projets</h2>
-      <div class="projects-grid">
-        <!-- Projet 1 -->
-        <div class="project-card">
-          <div class="project-img">
-            <img
-              src="./static/gateauanniversaire.png"
-              alt="logo application happy birthday"
-            />
-          </div>
-          <div class="project-content">
-            <h3>Projet à venir</h3>
-            <p>
-              <strong>BirthRemind</strong> cette application permet
-              d’enregistrer facilement les dates d’anniversaire et de recevoir
-              un rappel la veille et le jour J sans réseau social et sans
-              encombrer son agenda personnel.
-            </p>
-          </div>
-        </div>
-
-        <!-- Projet 2 (placeholder) -->
-        <div class="project-card">
-          <div class="project-img">
-            <img src="./static/logo.ico" alt="logo application rideup" />
-          </div>
-          <div class="project-content">
-            <h3>Projet en cours</h3>
-            <p>
-              <strong>RideUp</strong> est une application communautaire dédiée
-              aux passionnés de moto qui souhaitent rouler en groupe.
-            </p>
-            <div class="project-tags">
-              <span class="tag">GO</span>
-              <span class="tag">JS</span>
-              <span class="tag">SQL</span>
-              <span class="tag">HTML/CSS</span>
-            </div>
-            <a
-              href="https://github.com/Mathis-Pain/RideUP"
-              target="_blank"
-              class="btn"
-              style="font-size: 0.9rem; padding: 0.7rem 1.5rem"
-              >Voir le projet</a
-            >
-          </div>
-        </div>
-
-        <!-- Projet 3 (placeholder) -->
-        <div class="project-card">
-          <div class="project-img">🚀</div>
-          <div class="project-content">
-            <h3>Projet à venir</h3>
-            <div class="no-project">
-              <img
-                src="./static/personnagequireflechi.png"
-                alt="dessin d'un garcon avec une ampoule allumé qui reflechi"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Me Contacter</h2>
-      <div class="contact-content">
-        <p style="font-size: 1.2rem; margin-bottom: 2rem">
-          N'hésitez pas à me contacter pour discuter de vos projets ou
-          opportunités !
+      <div class="about-text">
+        <p style="margin-top: 1rem">
+          À 35 ans, j’ai choisi de donner un nouvel élan à ma carrière après
+          plusieurs années comme technicien de maintenance. Habitué à
+          analyser, diagnostiquer et résoudre des problèmes complexes avec
+          méthode, je mets aujourd’hui cette rigueur et cette logique au
+          service du développement informatique.
         </p>
-
-        <div class="contact-links">
-          <a href="mailto:mathis.pain76@gmail.com" class="contact-link">
-            <div class="contact-icon">📧</div>
-            <span>Email</span>
-          </a>
-          <a
-            href="https://github.com/Mathis-Pain"
-            target="_blank"
-            class="contact-link"
-          >
-            <div class="contact-icon">💻</div>
-            <span>GitHub</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mathis-pain-530aa0327/"
-            target="_blank"
-            class="contact-link"
-          >
-            <div class="contact-icon">💼</div>
-            <span>LinkedIn</span>
-          </a>
+        <p style="margin-top: 1rem">
+          Actuellement en formation de développeur full stack, j’apprends à
+          maîtriser les langages de programmation et les technologies web
+          modernes.
+        </p>
+        <p style="margin-top: 1rem">
+          Mon parcours m'a permis de maîtriser diverses technologies et de
+          développer une approche centrée sur l'utilisateur et les bonnes
+          pratiques de développement.
+        </p>
+        <p style="margin-top: 1rem">
+          Curieux, persévérant et passionné par la création de solutions
+          innovantes, je recherche une alternance qui me permettra de
+          consolider mes compétences et de contribuer activement à des projets
+          concrets.
+        </p>
+      </div>
+    </div>
+    <div class="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div class="hard-skills">
+          <h4>Hard skills :</h4>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+        <div class="soft-skills">
+          <h4>Soft skills :</h4>
+          <span class="skill-tag">Curieux</span>
+          <span class="skill-tag">Disponible</span>
+          <span class="skill-tag">Persévèrent</span>
+          <span class="skill-tag">Adaptabilité</span>
+          <span class="skill-tag">Esprit d'équipe</span>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Pain Mathis. Tous droits réservés.</p>
-    </footer>
-  </body>
+  <!-- Projects Section -->
+  <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+      <!-- Projet 1 -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./static/gateauanniversaire.png" alt="logo application happy birthday" />
+        </div>
+        <div class="project-content">
+          <h3>Projet en cours</h3>
+          <p>
+            <strong>BirthRemind</strong> cette application permet
+            d’enregistrer facilement les dates d’anniversaire et de recevoir
+            un rappel la veille et le jour J sans réseau social et sans
+            encombrer son agenda personnel.
+          </p>
+          <div class="project-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React-native</span>
+            <span class="tag">React</span>
+            <span class="tag">Expo</span>
+          </div>
+          <a href="https://github.com/Mathis-Pain/BirthRemind" target="_blank" class="btn"
+            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir le projet</a>
+        </div>
+      </div>
+
+      <!-- Projet 2 (placeholder) -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./static/logo.ico" alt="logo application rideup" />
+        </div>
+        <div class="project-content">
+          <h3>Projet en cours</h3>
+          <p>
+            <strong>RideUp</strong> Cette application communautaire rassemble les passionnés de moto souhaitant partager
+            la route. Elle permet de tisser des liens, de multiplier les sorties en groupe et de perfectionner sa
+            technique de conduite grâce au partage d'expérience et à l'entraide entre motards.
+          </p>
+          <div class="project-tags">
+            <span class="tag">GO</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <a href="https://github.com/Mathis-Pain/RideUP" target="_blank" class="btn"
+            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir le projet</a>
+        </div>
+      </div>
+
+      <!-- Projet 3 (placeholder) -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="./static/logo512.png" alt="logo application happy birthday" />
+        </div>
+        <div class="project-content">
+          <h3>Projet en cours</h3>
+          <p>
+            <strong>QuickQuote</strong> Cette application permet de réaliser des chiffrages
+            rapides et de gérer plusieurs projets simultanément pour comparer vos coûts en un coup d'œil,
+            sans la lourdeur d'un logiciel de gestion classique.
+          </p>
+          <div class="project-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+
+          </div>
+          <a href="https://github.com/Mathis-Pain/QuickQuote" target="_blank" class="btn"
+            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir le projet</a>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Me Contacter</h2>
+    <div class="contact-content">
+      <p style="font-size: 1.2rem; margin-bottom: 2rem">
+        N'hésitez pas à me contacter pour discuter de vos projets ou
+        opportunités !
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:mathis.pain76@gmail.com" class="contact-link">
+          <div class="contact-icon">📧</div>
+          <span>Email</span>
+        </a>
+        <a href="https://github.com/Mathis-Pain" target="_blank" class="contact-link">
+          <div class="contact-icon">💻</div>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mathis-pain-530aa0327/" target="_blank" class="contact-link">
+          <div class="contact-icon">💼</div>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pain Mathis. Tous droits réservés.</p>
+  </footer>
+</body>
+
 </html>
