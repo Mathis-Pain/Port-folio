@@ -6,12 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="./static/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Mathis Pain – Développeur Full Stack</title>
   <meta name="google-site-verification" content="jWTx4BmTi5lm_9D7NGztFuX0eaTSJyEAdSb9vgctyD0" />
   <meta name="description"
     content="Portfolio de Mathis Pain, développeur full stack  (HTML, CSS, JavaScript, go, sql, git).">
   <link rel="canonical" href="https://www.mathispain.fr/" />
-  <!-- 📣 Open Graph (aperçu Google / réseaux) -->
+  <!-- 📣 Open Graph -->
   <meta property="og:title" content="Portfolio – Mathis Pain" />
   <meta property="og:description"
     content="Découvrez mes projets, mes compétences et mon univers en tant que développeur." />
@@ -22,192 +35,250 @@
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Magie d'arrière-plan interactif -->
+  <div id="blob"></div>
+  <div id="blob-blur"></div>
 
-  <!-- Hero Section -->
-  <section id="accueil" class="hero">
-    <div class="hero-content">
-      <img src="static/photoProfil.png" alt="Photo de profil" class="profile-img" />
-      <h1>Pain Mathis</h1>
-      <p>Développeur Web Full Stack<br />En formation</p>
-      <div>
-        <a href="#projets" class="btn">Voir mes projets</a>
-        <a href="static/cv.pdf" class="btn btn-secondary" download>📥 Télécharger CV</a>
-      </div>
-    </div>
-  </section>
+  <!-- Contenu principal avec z-index supérieur -->
+  <div id="main-content">
 
-  <!-- About Section -->
-  <section id="apropos">
-    <div class="apropos">
-      <h2>À propos de moi</h2>
-      <div class="about-text">
-        <p style="margin-top: 1rem">
-          À 35 ans, j’ai choisi de donner un nouvel élan à ma carrière après
-          plusieurs années comme technicien de maintenance. Habitué à
-          analyser, diagnostiquer et résoudre des problèmes complexes avec
-          méthode, je mets aujourd’hui cette rigueur et cette logique au
-          service du développement informatique.
-        </p>
-        <p style="margin-top: 1rem">
-          Actuellement en formation de développeur full stack, j’apprends à
-          maîtriser les langages de programmation et les technologies web
-          modernes.
-        </p>
-        <p style="margin-top: 1rem">
-          Mon parcours m'a permis de maîtriser diverses technologies et de
-          développer une approche centrée sur l'utilisateur et les bonnes
-          pratiques de développement.
-        </p>
-        <p style="margin-top: 1rem">
-          Curieux, persévérant et passionné par la création de solutions
-          innovantes, je recherche une alternance qui me permettra de
-          consolider mes compétences et de contribuer activement à des projets
-          concrets.
-        </p>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+      <div class="nav-container">
+        <a href="#accueil" class="nav-logo">MP<span>.</span></a>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="competences">
-      <h2>Compétences</h2>
-      <div class="skills">
-        <div class="hard-skills">
-          <h4>Hard skills :</h4>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Go</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">SQL</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero hidden">
+      <div class="hero-content">
+        <div class="profile-wrapper">
+          <img src="static/photoProfil.png" alt="Photo de profil" class="profile-img" />
+          <div class="profile-ring"></div>
         </div>
-        <div class="soft-skills">
-          <h4>Soft skills :</h4>
-          <span class="skill-tag">Curieux</span>
-          <span class="skill-tag">Disponible</span>
-          <span class="skill-tag">Persévèrent</span>
-          <span class="skill-tag">Adaptabilité</span>
-          <span class="skill-tag">Esprit d'équipe</span>
+        <h1 class="hero-title">Mathis <br /><span class="text-gradient">Pain</span></h1>
+        <p class="subtitle">Développeur Web Full Stack <span class="pill">En formation</span></p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Explorer les projets</a>
+          <a href="static/cv.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Mon CV</a>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projets">
-    <h2>Mes Projets</h2>
-    <div class="projects-grid">
-      <!-- Projet 1 -->
-      <div class="project-card">
-        <div class="project-img">
-          <img src="./static/gateauanniversaire.png" alt="logo application happy birthday" />
-        </div>
-        <div class="project-content">
-          <h3>Projet en cours</h3>
-          <p>
-            <strong>BirthRemind</strong> cette application permet
-            d’enregistrer facilement les dates d’anniversaire et de recevoir
-            un rappel la veille et le jour J sans réseau social et sans
-            encombrer son agenda personnel.
-          </p>
-          <div class="project-tags">
-            <span class="tag">TypeScript</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React-native</span>
-            <span class="tag">React</span>
-            <span class="tag">Expo</span>
+    <!-- About Section (Bento Grid Layout) -->
+    <section id="apropos">
+      <div class="section-container">
+        <h2 class="section-title text-center hidden">À propos de <span class="text-gradient">moi</span></h2>
+
+        <div class="bento-grid hidden">
+          <!-- Brique 1: Bio -->
+          <div class="bento-item bento-about">
+            <h3 class="bento-title"><i class="fa-solid fa-user-astronaut"></i> Mon Parcours</h3>
+            <div class="about-text">
+              <p>
+                À 35 ans, j’ai choisi de donner un nouvel élan à ma carrière après
+                plusieurs années comme technicien de maintenance. Habitué à
+                analyser, diagnostiquer et résoudre des problèmes complexes avec
+                méthode, je mets aujourd’hui cette rigueur et cette logique au
+                service du développement informatique.
+              </p>
+              <br />
+              <p>
+                Actuellement en formation de développeur full stack, j’apprends à
+                maîtriser les langages de programmation et les technologies web modernes.
+                Mon parcours m'a permis de développer une approche centrée sur l'utilisateur
+                et la fiabilité. Curieux et passionné, je recherche une alternance pour
+                contribuer activement à des projets concrets.
+              </p>
+            </div>
           </div>
-          <a href="https://github.com/Mathis-Pain/BirthRemind" target="_blank" class="btn"
-            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir le projet</a>
-        </div>
-      </div>
 
-      <!-- Projet 2 (placeholder) -->
-      <div class="project-card">
-        <div class="project-img">
-          <img src="./static/logo.ico" alt="logo application rideup" />
-        </div>
-        <div class="project-content">
-          <h3>Projet en cours</h3>
-          <p>
-            <strong>RideUp</strong> Cette application communautaire rassemble les passionnés de moto souhaitant partager
-            la route. Elle permet de tisser des liens, de multiplier les sorties en groupe et de perfectionner sa
-            technique de conduite grâce au partage d'expérience et à l'entraide entre motards.
-          </p>
-          <div class="project-tags">
-            <span class="tag">GO</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">SQL</span>
-            <span class="tag">HTML/CSS</span>
+          <!-- Brique 2: Hard Skills -->
+          <div class="bento-item bento-hardskills">
+            <h3 class="bento-title"><i class="fa-solid fa-code"></i> Langages & Outils</h3>
+            <div class="skill-tags">
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Go</span>
+              <span class="skill-pill">HTML/CSS</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">SQL</span>
+            </div>
           </div>
-          <a href="https://github.com/Mathis-Pain/RideUP" target="_blank" class="btn"
-            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir le projet</a>
-        </div>
-      </div>
 
-      <!-- Projet 3 (placeholder) -->
-      <div class="project-card">
-        <div class="project-img">
-          <img src="./static/logo512.png" alt="logo application happy birthday" />
-        </div>
-        <div class="project-content">
-          <h3>Projet en cours</h3>
-          <p>
-            <strong>QuickQuote</strong> Cette application permet de réaliser des chiffrages
-            rapides et de gérer plusieurs projets simultanément pour comparer vos coûts en un coup d'œil,
-            sans la lourdeur d'un logiciel de gestion classique.
-          </p>
-          <div class="project-tags">
-            <span class="tag">TypeScript</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">React</span>
-
+          <!-- Brique 3: Soft Skills -->
+          <div class="bento-item bento-softskills">
+            <h3 class="bento-title"><i class="fa-solid fa-bolt"></i> Savoir-être</h3>
+            <div class="skill-tags">
+              <span class="skill-pill outline">Curieux</span>
+              <span class="skill-pill outline">Disponible</span>
+              <span class="skill-pill outline">Persévèrent</span>
+              <span class="skill-pill outline">Adaptabilité</span>
+              <span class="skill-pill outline">Esprit d'équipe</span>
+            </div>
           </div>
-          <a href="https://github.com/Mathis-Pain/QuickQuote" target="_blank" class="btn"
-            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir le projet</a>
-          <a href="https://www.mathispain.fr/quickquote/" target="_blank" class="btn"
-            style="font-size: 0.9rem; padding: 0.7rem 1.5rem">Voir l'application</a>
         </div>
       </div>
+    </section>
 
-  </section>
+    <!-- Projects Section -->
+    <section id="projets">
+      <div class="section-container">
+        <h2 class="section-title text-center hidden">Mes <span class="text-gradient">Réalisations</span></h2>
+        <div class="projects-grid">
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Me Contacter</h2>
-    <div class="contact-content">
-      <p style="font-size: 1.2rem; margin-bottom: 2rem">
-        N'hésitez pas à me contacter pour discuter de vos projets ou
-        opportunités !
-      </p>
+          <!-- Projet 1 -->
+          <div class="project-glass-card hidden">
+            <div class="project-img-wrapper padding-img" style="background: rgba(30,30,30,0.8);">
+              <img src="./static/gateauanniversaire.png" alt="logo application happy birthday"
+                class="project-preview-img contain-img" />
+            </div>
+            <div class="project-content">
+              <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+              <h3>BirthRemind</h3>
+              <p class="project-desc">
+                Une application pour enregistrer les dates d’anniversaire et recevoir
+                un rappel sans dépendre d'un réseau social ni encombrer son agenda classique.
+              </p>
+              <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React-Native</span>
+                <span class="tag">Expo</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Mathis-Pain/BirthRemind" target="_blank"
+                  class="btn btn-sm btn-primary w-100"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
 
-      <div class="contact-links">
-        <a href="mailto:mathis.pain76@gmail.com" class="contact-link">
-          <div class="contact-icon">📧</div>
-          <span>Email</span>
-        </a>
-        <a href="https://github.com/Mathis-Pain" target="_blank" class="contact-link">
-          <div class="contact-icon">💻</div>
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/mathis-pain-530aa0327/" target="_blank" class="contact-link">
-          <div class="contact-icon">💼</div>
-          <span>LinkedIn</span>
-        </a>
+          <!-- Projet 2 -->
+          <div class="project-glass-card hidden" style="transition-delay: 100ms;">
+            <div class="project-img-wrapper padding-img" style="background: rgba(20,20,30,0.8);">
+              <img src="./static/logo.ico" alt="logo application rideup" class="project-preview-img contain-img" />
+            </div>
+            <div class="project-content">
+              <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+              <h3>RideUp</h3>
+              <p class="project-desc">
+                Application communautaire pour les passionnés de moto. Tissez des liens, organisez des sorties en groupe
+                et partagez votre passion de la route.
+              </p>
+              <div class="project-tags">
+                <span class="tag">GO</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Mathis-Pain/RideUP" target="_blank" class="btn btn-sm btn-primary w-100"><i
+                    class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="project-glass-card hidden" style="transition-delay: 200ms;">
+            <div class="project-img-wrapper padding-img" style="background: rgba(40,20,30,0.8);">
+              <img src="./static/logo512.png" alt="logo application happy birthday"
+                class="project-preview-img contain-img" />
+            </div>
+            <div class="project-content">
+              <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+              <h3>QuickQuote</h3>
+              <p class="project-desc">
+                Chiffrages rapides et gestion multi-projets en temps réel. Comparez vos coûts en un clin d'œil sans la
+                lourdeur d'un logiciel classique.
+              </p>
+              <div class="project-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+              </div>
+              <div class="project-actions multi-action">
+                <a href="https://github.com/Mathis-Pain/QuickQuote" target="_blank" class="btn btn-sm btn-outline"><i
+                    class="fa-brands fa-github"></i> Code</a>
+                <a href="https://www.mathispain.fr/quickquote/" target="_blank" class="btn btn-sm btn-primary"><i
+                    class="fa-solid fa-satellite-dish"></i> Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Pain Mathis. Tous droits réservés.</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="hidden">
+      <div class="section-container">
+        <div class="contact-bento">
+          <h2 class="section-title text-center">Démarrons une <span class="text-gradient">collaboration</span></h2>
+          <p class="contact-text text-center">
+            Je suis disponible pour discuter de vos projets, d'une alternance ou de nouvelles opportunités.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:mathis.pain76@gmail.com" class="contact-card">
+              <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+              <span>Message</span>
+            </a>
+            <a href="https://github.com/Mathis-Pain" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mathis-pain-530aa0327/" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content section-container">
+        <div class="footer-logo">MP.</div>
+        <p>&copy; 2025 Pain Mathis.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript : Magie du Curseur et Apparitions au Scroll -->
+  <script>
+    /* Effet Blob Magique du Curseur */
+    const blob = document.getElementById("blob");
+    // Seulement si ce n'est pas un appareil tactile
+    if (window.matchMedia("(pointer: fine)").matches) {
+      document.body.onpointermove = event => {
+        const { clientX, clientY } = event;
+        // On modifie les offsets pour centrer le blob
+        blob.animate({
+          left: `${clientX}px`,
+          top: `${clientY}px`
+        }, { duration: 3000, fill: "forwards" }); // Fluidité magique
+      };
+    } else {
+      blob.style.display = "none";
+    }
+
+    /* Intersection Observer pour faire apparaitre (Fade/Translate) les éléments au scroll */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.1, // Déclenche quand 10% de l'élément est visible
+      rootMargin: "0px 0px -50px 0px"
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+  </script>
 </body>
 
 </html>
