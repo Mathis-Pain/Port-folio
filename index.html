@@ -88,19 +88,19 @@
             <h3 class="bento-title"><i class="fa-solid fa-user-astronaut"></i> Mon Parcours</h3>
             <div class="about-text">
               <p>
-                À 35 ans, j’ai choisi de donner un nouvel élan à ma carrière après
-                plusieurs années comme technicien de maintenance. Habitué à
-                analyser, diagnostiquer et résoudre des problèmes complexes avec
-                méthode, je mets aujourd’hui cette rigueur et cette logique au
-                service du développement informatique.
+                À 36 ans, après plusieurs années comme technicien de maintenance, j’ai choisi de me reconvertir dans
+                l’informatique. Mon expérience m’a appris la rigueur, l’analyse et la résolution méthodique de problèmes
+                complexes.
               </p>
               <br />
               <p>
-                Actuellement en formation de développeur full stack, j’apprends à
-                maîtriser les langages de programmation et les technologies web modernes.
-                Mon parcours m'a permis de développer une approche centrée sur l'utilisateur
-                et la fiabilité. Curieux et passionné, je recherche une alternance pour
-                contribuer activement à des projets concrets.
+                Actuellement en formation de développeur full stack, je développe des compétences en programmation et
+                technologies web, avec un intérêt particulier pour la cybersécurité. La sécurisation des systèmes, des
+                applications et des données est un domaine qui m’attire particulièrement.
+                Curieux et autonome, je continue d’approfondir mes connaissances à travers des projets personnels et une
+                veille technique active. Je recherche une alternance afin de mettre en pratique mes compétences et
+                contribuer à des projets concrets.
+
               </p>
             </div>
           </div>
@@ -136,82 +136,128 @@
     <section id="projets">
       <div class="section-container">
         <h2 class="section-title text-center hidden">Mes <span class="text-gradient">Réalisations</span></h2>
-        <div class="projects-grid">
 
-          <!-- Projet 1 -->
-          <div class="project-glass-card hidden">
-            <div class="project-img-wrapper padding-img" style="background: rgba(30,30,30,0.8);">
-              <img src="./static/logo-mairie.png" alt="logo mairie" class="project-preview-img contain-img" />
-            </div>
-            <div class="project-content">
-              <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
-              <h3>Portail Communal</h3>
-              <p class="project-desc">
-                Développement d'un site vitrine pour une mairie, optimisé pour l'accessibilité et la gestion simplifiée
-                des actualités locales via WordPress.
-              </p>
-              <div class="project-tags">
-                <span class="tag">cms</span>
-                <span class="tag">local</span>
-                <span class="tag">widget</span>
+        <div class="carousel-wrapper hidden">
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Précédent" disabled>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-viewport">
+            <div class="projects-grid" id="carouselTrack">
+
+              <!-- Projet 1 -->
+              <div class="project-glass-card">
+                <div class="project-img-wrapper padding-img" style="background: rgba(30,30,30,0.8);">
+                  <img src="./static/logo-mairie.png" alt="logo mairie" class="project-preview-img contain-img" />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+                  <h3>Portail Communal</h3>
+                  <p class="project-desc">
+                    Développement d'un site vitrine pour une mairie, optimisé pour l'accessibilité et la gestion
+                    simplifiée des actualités locales via WordPress.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">cms</span>
+                    <span class="tag">local</span>
+                    <span class="tag">widget</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/Mathis-Pain/" target="_blank" class="btn btn-sm btn-primary w-100"><i
+                        class="fa-brands fa-github"></i> Privé pour le moment</a>
+                  </div>
+                </div>
               </div>
-              <div class="project-actions">
-                <a href="https://github.com/Mathis-Pain/" target="_blank" class="btn btn-sm btn-primary w-100"><i
-                    class="fa-brands fa-github"></i> Privé pour le moment</a>
+
+              <!-- Projet 2 -->
+              <div class="project-glass-card">
+                <div class="project-img-wrapper padding-img" style="background: rgba(20,20,30,0.8);">
+                  <img src="./static/logo.ico" alt="logo application rideup" class="project-preview-img contain-img" />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+                  <h3>RideUp</h3>
+                  <p class="project-desc">
+                    Application communautaire pour les passionnés de moto. Tissez des liens, organisez des sorties en
+                    groupe et partagez votre passion de la route.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">GO</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">SQL</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/Mathis-Pain/RideUP" target="_blank"
+                      class="btn btn-sm btn-primary w-100"><i class="fa-brands fa-github"></i> Repository</a>
+                  </div>
+                </div>
               </div>
+
+              <!-- Projet 3 : CartEmpreinte -->
+              <div class="project-glass-card">
+                <div class="project-img-wrapper padding-img" style="background: rgba(40,20,30,0.8);">
+                  <img src="./static/icon-512.png" alt="logo application quickquote"
+                    class="project-preview-img contain-img" />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+                  <h3>CartEmpreinte</h3>
+                  <p class="project-desc">
+                    CartEmpreinte est une Progressive Web App qui permet de poser des marqueurs colorés sur une carte
+                    interactive, d'y attacher des photos et des descriptions, et d'organiser le tout en itinéraires.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">PWA</span>
+                  </div>
+                  <div class="project-actions multi-action">
+                    <a href="https://github.com/Mathis-Pain/CartEmpreinte" target="_blank"
+                      class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://www.mathispain.fr/CartEmpreinte/" target="_blank" class="btn btn-sm btn-primary"><i
+                        class="fa-solid fa-satellite-dish"></i> Live</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Projet 4 -->
+              <div class="project-glass-card">
+                <div class="project-img-wrapper padding-img" style="background: rgba(40,20,30,0.8);">
+                  <img src="./static/logo512.png" alt="logo application quickquote"
+                    class="project-preview-img contain-img" />
+                </div>
+                <div class="project-content">
+                  <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
+                  <h3>QuickQuote</h3>
+                  <p class="project-desc">
+                    Chiffrages rapides et gestion multi-projets en temps réel. Comparez vos coûts en un clin d'œil sans
+                    la lourdeur d'un logiciel classique.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">React</span>
+                  </div>
+                  <div class="project-actions multi-action">
+                    <a href="https://github.com/Mathis-Pain/QuickQuote" target="_blank"
+                      class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="https://www.mathispain.fr/quickquote/" target="_blank" class="btn btn-sm btn-primary"><i
+                        class="fa-solid fa-satellite-dish"></i> Live</a>
+                  </div>
+                </div>
+              </div>
+
+
+
             </div>
           </div>
 
-          <!-- Projet 2 -->
-          <div class="project-glass-card hidden" style="transition-delay: 100ms;">
-            <div class="project-img-wrapper padding-img" style="background: rgba(20,20,30,0.8);">
-              <img src="./static/logo.ico" alt="logo application rideup" class="project-preview-img contain-img" />
-            </div>
-            <div class="project-content">
-              <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
-              <h3>RideUp</h3>
-              <p class="project-desc">
-                Application communautaire pour les passionnés de moto. Tissez des liens, organisez des sorties en groupe
-                et partagez votre passion de la route.
-              </p>
-              <div class="project-tags">
-                <span class="tag">GO</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">SQL</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/Mathis-Pain/RideUP" target="_blank" class="btn btn-sm btn-primary w-100"><i
-                    class="fa-brands fa-github"></i> Repository</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Projet 3 -->
-          <div class="project-glass-card hidden" style="transition-delay: 200ms;">
-            <div class="project-img-wrapper padding-img" style="background: rgba(40,20,30,0.8);">
-              <img src="./static/logo512.png" alt="logo application happy birthday"
-                class="project-preview-img contain-img" />
-            </div>
-            <div class="project-content">
-              <div class="project-badge"><i class="fa-solid fa-meteor fa-beat-fade"></i> En cours</div>
-              <h3>QuickQuote</h3>
-              <p class="project-desc">
-                Chiffrages rapides et gestion multi-projets en temps réel. Comparez vos coûts en un clin d'œil sans la
-                lourdeur d'un logiciel classique.
-              </p>
-              <div class="project-tags">
-                <span class="tag">TypeScript</span>
-                <span class="tag">React</span>
-              </div>
-              <div class="project-actions multi-action">
-                <a href="https://github.com/Mathis-Pain/QuickQuote" target="_blank" class="btn btn-sm btn-outline"><i
-                    class="fa-brands fa-github"></i> Code</a>
-                <a href="https://www.mathispain.fr/quickquote/" target="_blank" class="btn btn-sm btn-primary"><i
-                    class="fa-solid fa-satellite-dish"></i> Live</a>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Suivant">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
     </section>
 
@@ -283,6 +329,58 @@
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    /* Carousel desktop */
+    (function initCarousel() {
+      const mq = window.matchMedia('(min-width: 769px)');
+      const track = document.getElementById('carouselTrack');
+      const prevBtn = document.getElementById('carouselPrev');
+      const nextBtn = document.getElementById('carouselNext');
+      const dotsContainer = document.getElementById('carouselDots');
+      if (!track) return;
+
+      const cards = Array.from(track.querySelectorAll('.project-glass-card'));
+      const visible = 3;
+      const maxIdx = cards.length - visible;
+      let idx = 0;
+      let dotsReady = false;
+
+      function buildDots() {
+        if (dotsReady) return;
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i <= maxIdx; i++) {
+          const dot = document.createElement('span');
+          dot.className = 'dot';
+          dot.addEventListener('click', () => goTo(i));
+          dotsContainer.appendChild(dot);
+        }
+        dotsReady = true;
+      }
+
+      function setup() {
+        if (!mq.matches) {
+          track.style.transform = '';
+          return;
+        }
+        buildDots();
+        goTo(idx);
+      }
+
+      function goTo(n) {
+        idx = Math.max(0, Math.min(n, maxIdx));
+        const gap = parseFloat(getComputedStyle(track).gap) || 32;
+        track.style.transform = `translateX(-${idx * (cards[0].offsetWidth + gap)}px)`;
+        dotsContainer.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+        prevBtn.disabled = idx === 0;
+        nextBtn.disabled = idx === maxIdx;
+      }
+
+      prevBtn.addEventListener('click', () => goTo(idx - 1));
+      nextBtn.addEventListener('click', () => goTo(idx + 1));
+      mq.addEventListener('change', setup);
+      window.addEventListener('resize', setup);
+      setup();
+    })();
   </script>
 </body>
 
