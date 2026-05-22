@@ -291,6 +291,12 @@ h1, h2, h3, h4 {
 
 /* === Layout Sections === */
 section { padding: 8rem 0; }
+#projets { padding: 2.5rem 0; }
+#projets .section-title { margin-bottom: 1.5rem; }
+#projets .project-img-wrapper { height: 180px; }
+#projets .project-content { padding: 1.2rem 1.5rem; }
+#projets .carousel-wrapper { margin-bottom: 1rem; }
+#projets .carousel-dots { margin-top: 1rem; }
 
 /* === Bento Box Setup (About & Skills) === */
 .bento-grid {
@@ -376,6 +382,9 @@ section { padding: 8rem 0; }
   min-width: 0;
   overflow: hidden;
   container-type: inline-size;
+  padding: 20px 4px;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 
 .projects-grid {
